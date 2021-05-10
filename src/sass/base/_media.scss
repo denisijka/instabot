@@ -1,0 +1,242 @@
+@media (max-width: 1200px) {
+  /* от 992px до 1200px */
+}
+@media (max-width: 991px) {
+  /* от 768px до 992px */
+  .container {
+    max-width: 725px;
+  }
+  .promo {
+    padding: 21px 0 93px;
+    &__header {
+      font-size: 38px;
+    }
+    &__subheader {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__link {
+      margin-top: 13px;
+    }
+    .button_main {
+      width: 250px;
+      height: 50px;
+      font-size: 15px;
+    }
+  }
+
+  .advantages {
+    min-height: 450px;
+    padding: 52px 0 60px;
+
+    &__item {
+      width: 215px;
+    }
+  }
+  .consultation {
+    min-height: 601px;
+    padding: 78px 0 102px;
+    .title_left {
+      font-size: 29px;
+      line-height: 42px;
+    }
+    &__descr {
+      line-height: 26px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  // от 576px до 768px
+  .container {
+    max-width: 530px;
+  }
+  .header {
+    &__logo {
+      width: 138px;
+    }
+    &__official {
+      margin: 0 auto;
+      font-size: 9px;
+      span {
+        font-size: 16px;
+      }
+    }
+    &__phone {
+      font-size: 13px;
+    }
+    .button {
+      width: 150px;
+      height: 33px;
+      font-size: 13px;
+    }
+  }
+
+  .promo {
+    padding: 35px 0 50px;
+    &__wrapper {
+      align-items: center;
+      width: 100%;
+    }
+    &__header {
+      font-size: 35px;
+    }
+    &__subheader {
+      font-size: 18px;
+      line-height: 18px;
+      margin-top: 17px;
+    }
+    &__icons {
+      margin-top: 60px;
+    }
+    &__icon {
+      font-size: 12px;
+    }
+    .button_main {
+      width: 250px;
+      height: 50px;
+      font-size: 15px;
+      margin-top: 100px;
+    }
+    &__link {
+      font-size: 14px;
+      margin-top: 9px;
+    }
+  }
+
+  .advantages {
+    .title {
+      font-size: 28px;
+    }
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-top: 30px;
+    }
+    &__icon {
+      width: 60px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    &__descr {
+      text-align: left;
+      font-size: 15px;
+      line-height: 23px;
+      margin-top: 15px;
+      width: 478px;
+    }
+  }
+  .consultation {
+    min-height: 559px;
+    padding: 78px 0 78px;
+    .title {
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+    &__descr {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .feed-form {
+      align-items: center;
+      width: 100%;
+      input {
+        width: 350px;
+      }
+      .button_submit {
+        width: 350px;
+        height: 48px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  // от 320px до 576px
+  .container {
+    max-width: 310px;
+  }
+  .header {
+    .button {
+      width: 150px;
+      height: 30px;
+    }
+  }
+  .promo {
+    .header {
+      &__official {
+        display: none;
+      }
+    }
+    &__wrapper {
+      width: 100%;
+    }
+    &__header {
+      font-size: 23px;
+    }
+    &__subheader {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    &__icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+    &__icon {
+      font-size: 20px;
+      width: 250px;
+      margin-top: 30px;
+      img {
+        width: 55px;
+      }
+    }
+  }
+  .advantages {
+    .title {
+      font-size: 23px;
+    }
+    &__wrapper {
+      margin-top: 0;
+    }
+    &__item {
+      width: 300px;
+    }
+    &__icon {
+      width: 75px;
+    }
+    &__subtitle {
+      font-size: 19px;
+      margin-top: 10px;
+    }
+    &__descr {
+      width: 100%;
+      font-size: 17px;
+    }
+  }
+  .consultation {
+    .title {
+      font-size: 23px;
+    }
+    .feed-form {
+      input {
+        width: 100%;
+      }
+      .button_submit {
+        width: 100%;
+        height: 48px;
+        font-size: 18px;
+      }
+    }
+  }
+}

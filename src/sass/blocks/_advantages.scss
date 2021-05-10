@@ -1,0 +1,35 @@
+.advantages {
+  padding: 70px 0 83px;
+  background: #f6f6f6;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 287px;
+    align-items: center;
+  }
+  &__subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #0d0d0d;
+    margin-top: 35px;
+  }
+  &__descr {
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0d0d0d;
+    margin-top: 20px;
+    a {
+      font-family: "MuseoModerno", sans-serif;
+      color: #ff0000;
+      text-decoration: underline;
+    }
+  }
+}
