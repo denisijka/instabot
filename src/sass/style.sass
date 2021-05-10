@@ -1,0 +1,40 @@
+@import "base/variables"
+
+*,
+::after,
+::before
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+body
+	font-family: 'Visuelt Pro', sans-serif
+	font-size: 18px
+	font-weight: normal
+	line-height: 135%
+	color: $main-color
+	background: #F2F2F2
+
+.container
+	max-width: 1392px
+	margin: 0 auto
+p,ul,li
+	margin-bottom: 0
+li
+	list-style: none
+a
+	&:hover
+	 text-decoration: none
+	 color: $second-color
+
+h1,
+h2
+	margin-bottom: 0
+
+@import "blocks/header"
+@import "blocks/promo"
+
+@import "base/buttons"
+@import "base/titles"
+@import "base/forms"
+@import "base/media"

@@ -1,0 +1,102 @@
+.promo
+	min-height: 720px
+	background-image: linear-gradient(15deg, #d3b9e5, #d2cdf4, #f4f5fc,
+	$white-color)
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__descr
+		margin: 120px 0 0 57px
+		width: 550px
+	&__title
+		font-weight: 500
+		font-size: 56px
+		line-height: 125%
+		color: $title-color
+	&__subscribe-form
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 465px
+		height: 64px
+		background: rgba(255, 255, 255, 0.5)
+		border-radius: 25px
+		overflow: hidden
+		margin-top: 40px
+	&__text-field
+		padding: 20px 129px 20px 16px
+		border: none
+		background: transparent
+	&__form-btn
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 220px
+		height: 48px
+		font-weight: 500
+		margin-right: 8px
+		color: $second-color
+		border: none
+		background: $white-color
+		border-radius: 16px
+		cursor: pointer
+	&__text
+		margin-top: 16px
+		span
+			color: $second-color
+
+	&__img
+		position: relative
+		width: 628px
+		margin-right: 57px
+		overflow: hidden
+		z-index: 5
+	&__hero-1
+		position: relative
+		// overflow: hidden
+		z-index: 5
+	&__eclipse_blue
+		position: absolute
+		top: 0
+		left: 0
+		margin-top: 280px
+		width: 302px
+		height: 302px
+		border-radius: 100%
+		background: $second-color
+		z-index: 0
+	&__eclipse_white
+		position: absolute
+		top: 0
+		right: 0
+		margin-top: 80px
+		width: 465px
+		height: 465px
+		border-radius: 100%
+		background: $white-color
+		z-index: 2
+	&__scroll
+		position: relative
+		color: $white-color
+		margin-top: 131px
+		font-weight: normal
+		font-size: 16px
+		margin-left: 33px
+
+		&::before
+			content: ""
+			position: absolute
+			top: -4px
+			left: -33px
+			width: 24px
+			height: 32px
+			border: 2px solid $white-color
+			border-radius: 12px
+			margin-right: 8px
+		.divider
+			position: absolute
+			height: 9px
+			width: 2px
+			background: $white-color
+			top: 2px
+			left: -22px
