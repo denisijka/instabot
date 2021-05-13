@@ -1,0 +1,94 @@
+.prices
+	min-height: 800px
+	padding: 80px 0 88px
+	background: $white-color
+	&__title
+		font-weight: 500
+		font-size: 36px
+		line-height: 112%
+		color: $title-color
+	&__wrapper
+		margin-top: 40px
+		display: flex
+		justify-content: space-between
+	&__item
+		width: 300px
+		min-height: 552px
+		padding-bottom: 24px
+		background: $item-color
+		box-shadow: $box-shadow
+		backdrop-filter: blur(24px)
+		border-radius: 24px 24px
+	&__header
+		background: $white-color
+		padding: 20px 0 20px 24px
+	&__tarif
+		font-weight: 500
+		font-size: 24px
+		line-height: 100%
+		color: $title-color
+	&__sum
+		font-weight: 500
+		font-size: 24px
+		line-height: 100%
+		color: $second-color
+		margin-top: 8px
+		span
+			color: $main-color
+	&__features
+		width: 284px
+		padding: 24px 0 0 24px
+	&__feature-item
+		position: relative
+		font-weight: normal
+		font-size: 18px
+		line-height: 135%
+		margin-left: 39px
+		margin-bottom: 16px
+		text-align: left
+		&:last-child
+			margin-bottom: 0
+		i
+			margin-right: 10px
+		&::before
+			position: absolute
+			content: "\f00c"
+			Font-family: FontAwesome
+			font-size: 14px
+			color: $second-color
+			top: 0
+			left: -39px
+			margin-right: 26px
+			z-index: 2
+		&::after
+			position: absolute
+			content: ''
+			width: 32px
+			height: 32px
+			border-radius: 100%
+			background: $white-color
+			top: -4px
+			left: -49px
+			z-index: 0
+	&__feature-item_minus
+		&::before
+			position: absolute
+			content: "\f00d"
+			Font-family: FontAwesome
+			font-size: 18px
+			color: #EB4763
+			top: 0
+			left: -39px
+			margin-right: 26px
+
+	.button
+		margin: 0 auto
+		margin-top: 16px
+		width: 270px
+		height: 56px
+		background: $white-color
+		a
+			color: $second-color
+			font-weight: 500
+			font-size: 18px
+			line-height: 135%
