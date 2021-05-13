@@ -10,14 +10,42 @@
 		line-height: 112%
 		color: $title-color
 	&__wrapper
+		width: 100%
 		display: flex
 		margin-top: 41px
 	&__img
-		flex-basis: 50%
+		// width: 600px
+		position: relative
+		img
+			margin-left: 100px
+	&__picture-2
+		position: relative
+		// overflow: hidden
+		z-index: 5
+	&__eclipse_pink
+		position: absolute
+		top: 0
+		left: 0
+		margin-top: 280px
+		width: 302px
+		height: 302px
+		border-radius: 100%
+		background: $pink-color
+		z-index: 0
+	&__eclipse_white
+		position: absolute
+		top: -80px
+		right: 0px
+		margin-top: 80px
+		width: 540px
+		height: 540px
+		border-radius: 100%
+		background: $white-color
+		z-index: 2
 
 	&__descr
-		flex-basis: 50%
-		padding: 30px 0 0 16px
+		width: 463px
+		margin: 30px 0 0 24px
 	&__links
 		display: flex
 		align-items: center
@@ -57,4 +85,4 @@
 	.button
 		width: 247px
 		height: 56px
-		margin-top: 71px
+		margin-top: 66px
