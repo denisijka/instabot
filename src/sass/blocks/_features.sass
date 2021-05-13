@@ -1,6 +1,7 @@
 .features
 	min-height: 480px
 	padding: 80px 0 104px
+	background: $white-color
 	&__wrapper
 	&__title
 		font-weight: 500
@@ -12,17 +13,29 @@
 		display: flex
 		justify-content: space-between
 	&__item
-		flex-basis: 389px
+		// flex-basis: 389px
+		width: 415px
+		min-height: 240px
+		margin-right: 16px
+		background: $item-color
+		box-shadow: $box-shadow
+		backdrop-filter: blur(24px)
+		border-radius: 24px 24px
+		&:last-child
+			margin-right: 0
 	&__subtitle
+		padding: 10px 0 10px 16px
 		font-weight: 500
 		font-size: 24px
 		line-height: 100%
 		color: $title-color
-		&::before
-			content: ''
-			background: url('../../icons/emoji1.png')
+		background: $white-color
+		border-radius: 24px 24px 0 0
+		img
+			margin-right: 12px
+
 	&__text
 		font-weight: normal
 		font-size: 18px
 		line-height: 135%
-		margin-top: 44px
+		padding: 16px 24px 24px 24px
