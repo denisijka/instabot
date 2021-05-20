@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/df613de3b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- for accordion -->
+
 
 </head>
 
@@ -310,9 +312,11 @@
                 Часто задаваемые вопросы
             </h2>
             <div class="questions__wrapper">
-                <div class="question__item">
-                    <button class="accordion">Первый вопрос</button>
-                    <div class="panel">
+                <!-- --------------------------------------Accordion-------------------- -->
+                <div class="items">
+                    <input id="tab-one" type="checkbox" name="tabs">
+                    <label class='item clickTab' for="tab-one">Первый вопрос</label>
+                    <div class="tab-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
                             pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
                             lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
@@ -320,9 +324,10 @@
                             gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
                     </div>
                 </div>
-                <div class="question__item">
-                    <button class="accordion">Второй вопрос</button>
-                    <div class="panel">
+                <div class="items">
+                    <input id="tab-two" type="checkbox" name="tabs">
+                    <label class='item clickTab' for="tab-two">Второй вопрос</label>
+                    <div class="tab-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
                             pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
                             lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
@@ -330,9 +335,10 @@
                             gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
                     </div>
                 </div>
-                <div class="question__item">
-                    <button class="accordion">Третий вопрос</button>
-                    <div class="panel">
+                <div class="items">
+                    <input id="tab-three" type="checkbox" name="tabs">
+                    <label class='item clickTab' for="tab-three">Третий вопрос</label>
+                    <div class="tab-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
                             pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
                             lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
@@ -340,9 +346,10 @@
                             gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
                     </div>
                 </div>
-                <div class="question__item">
-                    <button class="accordion">Четвертый вопрос</button>
-                    <div class="panel">
+                <div class="items">
+                    <input id="tab-four" type="checkbox" name="tabs">
+                    <label class='item clickTab' for="tab-four">Четвертый вопрос</label>
+                    <div class="tab-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
                             pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
                             lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
@@ -350,14 +357,16 @@
                             gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
                     </div>
                 </div>
-
-
+                <!-- ---------------------------------------------------------- -->
             </div>
         </div>
     </section>
 
 
-    <script src="js/cards.js"></script>
+
+
+    <script src="js/accordion.js"></script>
+
 </body>
 
 </html>
