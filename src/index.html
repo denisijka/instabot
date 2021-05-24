@@ -97,7 +97,7 @@
             </div>
         </div>
     </section>
-    <!-- 
+
     <section class="working">
         <div class="container">
             <h2 class="working__title">Как мы работаем</h2>
@@ -313,48 +313,64 @@
             </h2>
             <div class="questions__wrapper">
 
-                <div class="items">
-                    <input id="tab-one" type="checkbox" name="tabs">
-                    <label class='item clickTab' for="tab-one">Первый вопрос</label>
-                    <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
-                            pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
-                            lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
-                            nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada
-                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
+                <div data-spollers data-one-spoller class="block block_1">
+                    <div class="block__item">
+                        <button tabindex="-1" type="button" data-spoller class="block__title"><span>Обычный спойлер
+                                №1</span></button>
+                        <div class="block__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas hic numquam magni. Nulla,
+                            laborum illo enim qui eum architecto soluta, quos provident natus nobis a et aspernatur,
+                            labore fuga aliquam!
+                        </div>
+                    </div>
+                    <div class="block__item">
+                        <button tabindex="-1" type="button" data-spoller class="block__title">Обычный спойлер
+                            №2</button>
+                        <div class="block__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas hic numquam magni. Nulla,
+                            laborum illo enim qui eum architecto soluta, quos provident natus nobis a et aspernatur,
+                            labore fuga aliquam!
+                        </div>
+                    </div>
+                    <div class="block__item">
+                        <button tabindex="-1" type="button" data-spoller class="block__title">Обычный спойлер
+                            №3</button>
+                        <div class="block__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas hic numquam magni. Nulla,
+                            laborum illo enim qui eum architecto soluta, quos provident natus nobis a et aspernatur,
+                            labore fuga aliquam!
+                        </div>
                     </div>
                 </div>
-                <div class="items">
-                    <input id="tab-two" type="checkbox" name="tabs">
-                    <label class='item clickTab' for="tab-two">Второй вопрос</label>
-                    <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
-                            pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
-                            lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
-                            nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada
-                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
+                <div data-spollers="650,min" class="block block_2">
+                    <div class="block__item">
+                        <button tabindex="-1" type="button" data-spoller class="block__title">Спойлер работает на
+                            экранах >= 650px</button>
+                        <div class="block__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas hic numquam magni. Nulla,
+                            laborum illo enim qui eum architecto soluta, quos provident natus nobis a et aspernatur,
+                            labore fuga aliquam!
+                        </div>
                     </div>
                 </div>
-                <div class="items">
-                    <input id="tab-three" type="checkbox" name="tabs">
-                    <label class='item clickTab' for="tab-three">Третий вопрос</label>
-                    <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
-                            pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
-                            lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
-                            nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada
-                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
+                <div data-spollers="800,max" class="block block_3">
+                    <div class="block__item">
+                        <button tabindex="-1" type="button" data-spoller class="block__title">Спойлер #1 работает на
+                            экранах <= 800px</button>
+                                <div class="block__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas hic numquam
+                                    magni. Nulla, laborum illo enim qui eum architecto soluta, quos provident natus
+                                    nobis a et aspernatur, labore fuga aliquam!
+                                </div>
                     </div>
-                </div>
-                <div class="items">
-                    <input id="tab-four" type="checkbox" name="tabs">
-                    <label class='item clickTab' for="tab-four">Четвертый вопрос</label>
-                    <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
-                            pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis
-                            lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt
-                            nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada
-                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </p>
+                    <div class="block__item">
+                        <button tabindex="-1" type="button" data-spoller class="block__title">Спойлер #2 работает на
+                            экранах <= 800px</button>
+                                <div class="block__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas hic numquam
+                                    magni. Nulla, laborum illo enim qui eum architecto soluta, quos provident natus
+                                    nobis a et aspernatur, labore fuga aliquam!
+                                </div>
                     </div>
                 </div>
 
@@ -405,8 +421,8 @@
             </div>
         </div>
     </footer>
-    -->
-    <script src="js/accordion.js"></script>
+
+    <script src="js/script.js"></script>
 
 </body>
 
