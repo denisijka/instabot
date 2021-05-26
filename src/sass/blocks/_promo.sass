@@ -56,16 +56,17 @@
 		span
 			color: $second-color
 
-	&__img
+	&__hero
 		position: relative
-		flex-basis: 628px
+		width: 628px
 		// margin-right: 57px
 		overflow: hidden
 		z-index: 5
-	&__hero-1
-		position: relative
-		// overflow: hidden
-		z-index: 5
+		img
+			max-width: 100% /** при уменьшении экрана картинка начнет пропорционально уменьшаться **/
+			position: relative
+			// overflow: hidden
+			z-index: 5
 	&__eclipse_blue
 		position: absolute
 		top: 0
