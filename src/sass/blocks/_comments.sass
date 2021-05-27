@@ -11,18 +11,35 @@
 		line-height: 112%
 		color: $title-color
 	&__wrapper
-
 		position: relative
 		margin-top: 40px
 	&__item
+		max-width: 628px
 		position: absolute
-		top: 0
-		left: 0
-		width: 628px
+		// top: 0
+		// left: 0
 		min-height: 240px
 		box-shadow: $box-shadow
 		background: $item-color
 		border-radius: 16px
+		&:nth-child(1)
+			top: 56px
+			// left: 26px
+			left: 2%
+		&:nth-child(2)
+			top: 0
+			// left: 326px
+			left: 18%
+			z-index: 3
+		&:nth-child(3)
+			top: 346px
+			// left: 164px
+			left: 12%
+		&:nth-child(4)
+			top: 217px
+			// left: 653px
+			left: 51%
+			z-index: 2
 	&__header
 		display: flex
 		justify-content: space-between
@@ -51,32 +68,7 @@
 			color: $main-color
 			&:hover
 				color: $second-color
-	&__cat-one
-		position: absolute
-		top: 0
-		left: 0
-		margin-top: 56px
-		margin-bottom: 26px
-	&__cat-two
-		position: absolute
-		top: 0
-		left: 0
-		margin-left: 326px
-		z-index: 3
 
-	&__cat-three
-		position: absolute
-		top: 0
-		left: 0
-		margin-top: 346px
-		margin-left: 164px
-	&__cat-four
-		position: absolute
-		top: 0
-		left: 0
-		margin-top: 217px
-		margin-left: 653px
-		z-index: 2
 	.button
 		position: absolute
 		top: 554px
