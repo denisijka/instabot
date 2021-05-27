@@ -4,18 +4,23 @@
 	background: $white-color
 	&__wrapper
 		display: flex
+		margin-top: 16px
 	&__title
 		font-weight: 500
 		font-size: 36px
 		line-height: 112%
 		color: $title-color
 	&__subtitle
-		margin-top: 16px
+
 	&__descr
-		flex-basis: 465px
+		width: 465px
+		max-width: 100%
 		margin-right: 114px
 	&__hero
+		img
+			max-width: 100%
 .feed-form
+  width: 465px
   margin-top: 24px
   display: flex
   flex-direction: column
@@ -39,7 +44,8 @@
 			color: $second-color
 
 input
-	width: 100%
+	// display: block
+	max-width: 100%
 	height: 56px
 	font-weight: normal
 	font-size: 18px
