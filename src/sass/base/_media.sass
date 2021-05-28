@@ -122,3 +122,102 @@
 		&__hero
 		&__descr
 			margin-right: 15px
+@media (max-width: 991px)
+	/* от 768px до 992px */
+	.container
+		max-width: 656px
+
+	.header
+
+		&__menu
+			position: fixed
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			top: 0
+			right: -100%
+			width: 50%
+			height: 100vh
+			padding: 20px 15px
+			background-color: rgba(0, 0, 0, .8)
+			transition: 0.6s all
+			&_active
+				right: 0
+			&_item
+				padding-right: 0
+				border: none
+				margin: 10px 0
+			&_link
+				font-size: 20px
+
+	// --------------------
+	.burger
+		display: block
+		position: absolute
+		outline: none
+		cursor: pointer
+		border: none
+		background: none
+		width: 20px
+		position: relative
+		height: 26px
+		z-index: 2000
+		margin-right: 24px
+
+		span
+	      background-color: #4754eb
+	      display: block
+	      height: 2px
+	      position: absolute
+	      width: 100%
+		span
+			&:nth-child(1)
+				width: 20px
+				top: 5px
+			&:nth-child(2)
+				top: 50%
+				margin-top: -2px
+				width: 14px
+			&:nth-child(3)
+				top: 100%
+				margin-top: -9px
+				width: 14px
+		&_active
+			span
+				&:nth-child(1)
+		          margin: -2px 0 0 -3px
+		          top: 40%
+		          width: 120%
+		          -moz-transform: rotate(-40deg)
+		          -webkit-transform: rotate(-40deg)
+		          -o-transform: rotate(-40deg)
+		          -ms-transform: rotate(-40deg)
+
+				&:nth-child(2)
+		          opacity: 0
+
+				&:nth-child(3)
+		          margin: -2px 0 0 -3px
+		          top: 40%
+		          width: 120%
+		          -moz-transform: rotate(40deg)
+		          -webkit-transform: rotate(40deg)
+		          -o-transform: rotate(40deg)
+		          -ms-transform: rotate(40deg)
+		span
+			-webkit-transition: all 0.2s ease-in-out
+			-moz-transition: all 0.2s ease-in-out
+			-o-transition: all 0.2s ease-in-out
+			transition: all 0.2s ease-in-out
+	// --------------------
+	.header
+		&__logo
+			margin-right: auto
+		&__account
+			p
+				display: none
+		&__change-ru,
+		&__change-en
+			display: none
+		.button
+			width: 220px

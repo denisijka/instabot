@@ -142,7 +142,7 @@ let _slideUp = (target, duration = 500) => {
             target.classList.remove('_slide');
         }, duration);
     }
-}
+};
 let _slideDown = (target, duration = 500) => {
     if (!target.classList.contains('_slide')) {
         target.classList.add('_slide');
@@ -172,14 +172,14 @@ let _slideDown = (target, duration = 500) => {
             target.classList.remove('_slide');
         }, duration);
     }
-}
+};
 let _slideToggle = (target, duration = 500) => {
     if (target.hidden) {
         return _slideDown(target, duration);
     } else {
         return _slideUp(target, duration);
     }
-}
+};
 
 //========================================================================================================================================================
 /*

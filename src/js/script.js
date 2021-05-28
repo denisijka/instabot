@@ -7,6 +7,7 @@ function loadScript(src) {
     script.async = false;
     document.body.append(script);
 }
+loadScript('js/burger.js');
 loadScript('js/accordion.js');
 /*
 он будет загружаться только после того как будет добавлен в документ, то есть выполнения этой строки document.body.append(script);
