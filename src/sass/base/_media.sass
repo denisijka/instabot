@@ -124,6 +124,8 @@
 			margin-right: 15px
 @media (max-width: 991px)
 	/* от 768px до 992px */
+	body .lock
+		overflow: hidden
 	.container
 		max-width: 656px
 
@@ -131,29 +133,36 @@
 
 		&__menu
 			position: fixed
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			top: 0
-			right: -100%
-			width: 50%
-			height: 100vh
-			padding: 20px 15px
-			background-color: rgba(0, 0, 0, .8)
-			transition: 0.6s all
+			top: -100%
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(255, 255, 255, 0.9)
+			padding: 80px 0 80px 56px
+			transition: all 0.5s ease 0s
+
 			&_active
-				right: 0
+				top: 0
 			&_item
-				padding-right: 0
 				border: none
 				margin: 10px 0
+				padding-top: 24px
 			&_link
 				font-size: 20px
+			&-item
+				padding-top: 24px
+		&__list
+			display: block
+		&__link
+			font-weight: 500
+			line-height: 100%
+			font-size: 56px
+			color: $second-color
 
 	// --------------------
-	.burger
+	.header__burger
 		display: block
-		position: absolute
+		position: relative
 		outline: none
 		cursor: pointer
 		border: none
@@ -161,8 +170,9 @@
 		width: 20px
 		position: relative
 		height: 26px
-		z-index: 2000
-		margin-right: 24px
+
+		margin-right: auto
+		z-index: 3
 
 		span
 	      background-color: #4754eb
@@ -211,8 +221,12 @@
 			transition: all 0.2s ease-in-out
 	// --------------------
 	.header
+		&__wrapper
+
 		&__logo
-			margin-right: auto
+			margin-right: 16px
+		&__menu-item
+			margin-right: 0
 		&__account
 			p
 				display: none
@@ -220,4 +234,6 @@
 		&__change-en
 			display: none
 		.button
+			position: relative
+			z-index: 3
 			width: 220px
