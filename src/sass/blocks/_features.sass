@@ -1,6 +1,6 @@
 .features
 	min-height: 480px
-	padding: 80px 0 104px
+	padding: 80px 0
 	background: $white-color
 	&__wrapper
 	&__title
@@ -13,9 +13,8 @@
 		display: flex
 		justify-content: space-between
 	&__item
-		// flex-basis: 389px
 		width: 415px
-		min-height: 240px
+		min-height: 100%
 		margin-right: 16px
 		background: $item-color
 		box-shadow: $box-shadow
@@ -28,12 +27,14 @@
 		padding: 10px 0 10px 16px
 		font-weight: 500
 		font-size: 24px
-
 		color: $title-color
 		background: $white-color
 		border-radius: 24px 24px 0 0
+	&__icon
+		flex: 0 1 56px
+		margin-right: 12px
 		img
-			margin-right: 12px
+			max-width: 100%
 	&__subtitle
 		line-height: 57px
 
