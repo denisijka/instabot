@@ -127,7 +127,7 @@
 	body .lock
 		overflow: hidden
 	.container
-		max-width: 672px
+		max-width: 720px
 
 	.header
 
@@ -170,9 +170,9 @@
 		width: 20px
 		position: relative
 		height: 26px
-		margin-right: 298px
 		z-index: 3
 		&::before
+			margin-right: 16px
 			position: absolute
 			content: ''
 			width: 40px
@@ -233,15 +233,20 @@
 		&__wrapper
 
 		&__logo
-			margin-right: 16px
+			margin-right: 334px
 		&__menu-item
 			margin-right: 0
 		&__account
-			p
-				display: none
-		&__change-ru,
-		&__change-en
+			// p
 			display: none
+
+		.on
+			display: block
+		// .slash
+		// 	display: block
+		// .en_on
+		// 	display: block
+
 		.button
 			position: relative
 			z-index: 3
@@ -250,6 +255,7 @@
 		height: 1030px
 		&__wrapper
 			flex-direction: column
+			max-width: 100%
 		&__descr
 			width: 100%
 			margin-top: 40px
@@ -269,7 +275,8 @@
 		&__items
 			flex-direction: column
 		&__item
-			width: 100%
+			max-width: 720px
+			// width: 100%
 			margin: 16px 0 0 0
 			&:first-child
 				margin-top: 0
