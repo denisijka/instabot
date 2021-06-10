@@ -45,19 +45,22 @@
 
 	&__descr
 		width: 463px
-		margin: 30px 0 0 24px
-	&__links
+		margin: 40px 0 0 24px
+	&__tabs
 		display: flex
 		align-items: center
 
-	&__link
+	&__tab
 		margin: 0 16px
 		font-weight: 500
 		font-size: 18px
 		line-height: 135%
-		color: $white-color
+		color: black
+		transition: all 0.3s
+		cursor: pointer
 		&:hover
 			color: $second-color
+			text-shadow: 0 0 0.1px $a-hover
 		&:first-child
 			margin-left: 0
 		&:last-child

@@ -9,9 +9,11 @@
 	box-sizing: border-box
 a
 	text-decoration: none
+	transition: all 0.6s
+	cursor: pointer
 	&:hover
 		text-decoration: none
-		color: $a-hover
+		text-shadow: 0 0 0.1px $a-hover
 
 ul,
 ol,
@@ -39,7 +41,7 @@ html,body
 	font-weight: normal
 	line-height: 135%
 	color: $main-color
-	background: #F2F2F2
+	background: $body-background
 	// background-image: url('/img/color.svg')
 .container
 	max-width: 1280px
