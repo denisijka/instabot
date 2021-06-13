@@ -20,4 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     hideTabContent();
     showTabContent();
+
+    tabsParent.addEventListener('click', (event) => {
+
+
+    });
 });
