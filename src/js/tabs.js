@@ -18,4 +18,6 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsContent[i].style.display = 'block';
         tabs[i].classList.add('working__tab_active');
     }
+    hideTabContent();
+    showTabContent(0);
 });
