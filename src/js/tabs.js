@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     showTabContent();
 
     tabsParent.addEventListener('click', (event) => {
-
+        const target = event.target;
 
     });
 });
