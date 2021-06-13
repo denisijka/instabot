@@ -5,4 +5,9 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsContent = document.querySelectorAll('.working__tabcontent'),
         tabsParent = document.querySelector('.working__tabs');
 
+    function hideTabContent() {
+        tabsContent.forEach(item => {
+            item.style.display = 'none';
+        });
+    }
 });
