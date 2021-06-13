@@ -9,5 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsContent.forEach(item => {
             item.style.display = 'none';
         });
+        tabs.forEach(item => {
+            item.classList.remove('working__tab_active');
+        });
     }
 });
