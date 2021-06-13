@@ -13,4 +13,9 @@ window.addEventListener('DOMContentLoaded', () => {
             item.classList.remove('working__tab_active');
         });
     }
+
+    function showTabContent(i) {
+        tabsContent[i].style.display = 'block';
+        tabs[i].classList.add('working__tab_active');
+    }
 });
