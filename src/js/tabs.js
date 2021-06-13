@@ -14,10 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function showTabContent(i) {
+    function showTabContent(i = 0) {
         tabsContent[i].style.display = 'block';
         tabs[i].classList.add('working__tab_active');
     }
     hideTabContent();
-    showTabContent(0);
+    showTabContent();
 });
