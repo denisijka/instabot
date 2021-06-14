@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsContent.forEach(item => {
             // Надо будет выполнить 2 операции вместо 1 - ой, потому что мы работаем с классами.Нам нужно будет добавить класс hide, а второй часью нам нужно будет удалить класс show.И это тот случай когда нам нужно применять комбинацию двух методов, toggle использовать не можем иначе начнется каша с этими классами при переключении.
             item.classList.add('hide');
-            item.classList.remove('show');
+            item.classList.remove('show', 'fade');
         });
         tabs.forEach(item => {
             item.classList.remove('working__tab_active');
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function showTabContent(i = 0) {
-        tabsContent[i].classList.add('show');
+        tabsContent[i].classList.add('show', 'fade');
         tabsContent[i].classList.remove('hide');
         tabs[i].classList.add('working__tab_active');
     }
